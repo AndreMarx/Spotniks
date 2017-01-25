@@ -3,6 +3,9 @@
 	<script type="text/javascript">
 		// REDIRECIONA
 		var site = document.getElementById("site");
+		console.log(site);
+		console.log("site.src: " + site.src);
+		console.log("window.location.pathname: " + window.location.pathname);
 		site.src = site.src + window.location.pathname;
 	</script>
 </head>
