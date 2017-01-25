@@ -3,10 +3,15 @@
 	<script type="text/javascript">
 		// REDIRECIONA
 		var site = document.getElementById("site");
-		console.log(site);
-		console.log("site.src: " + site.src);
-		console.log("window.location.pathname: " + window.location.pathname);
-		site.src = site.src + window.location.pathname;
+		//console.log(site);
+		//console.log("site.src: " + site.src);
+		console.log(site.contentWindow.location);
+		//var outer = document.framedElement;
+		/*if(outer) {
+			console.log("window.location.href: " + outer.location.href);
+			console.log("window.location.pathname: " + window.location.pathname);
+		}*/
+		//site.src = site.src + window.location.pathname;
 	</script>
 </head>
 </html>
